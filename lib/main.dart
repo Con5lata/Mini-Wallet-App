@@ -18,13 +18,15 @@ class MiniWalletApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
+      debugShowCheckedModeBanner: false, 
+      
       title: 'Mini Wallet',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      // Temporarily using a Placeholder until the UI branch is merged
-      home: const HomeScreen(), 
+      home: const HomeScreen(),
     );
   }
 }
