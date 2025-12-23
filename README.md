@@ -17,7 +17,9 @@ I chose **Provider** for this project because:
 ## 📸 Screenshots
 | Home Screen | Add Transaction |
 |---|---|
-| [Insert Screenshot 1] | [Insert Screenshot 2] |
+| [![WhatsApp Image 2025-12-23 at 16 17 21](https://github.com/user-attachments/assets/ec95fc02-bead-4e7f-a355-15a75e47ba87)
+] | [![WhatsApp Image 2025-12-23 at 16 17 20](https://github.com/user-attachments/assets/78cb9c60-2f63-400b-87f9-129e2174c4b2)
+] |
 
 ## 🏗️ How to Run
 1. Clone the repo: `git clone https://github.com/yourusername/mini_wallet_app.git`
