@@ -15,9 +15,22 @@ I chose **Provider** for this project because:
 3. **Scalability**: It makes it easy to add local persistence (like Shared Preferences) later.
 
 ## 📸 Screenshots
-| Home Screen | Add Transaction |
-|---|---|
-| [Insert Screenshot 1] | [Insert Screenshot 2] |
+
+<table>
+  <tr>
+    <th>Home Screen</th>
+    <th>Add Transaction</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/ec95fc02-bead-4e7f-a355-15a75e47ba87" width="300"/>
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/78cb9c60-2f63-400b-87f9-129e2174c4b2" width="300"/>
+    </td>
+  </tr>
+</table>
+
 
 ## 🏗️ How to Run
 1. Clone the repo: `git clone https://github.com/yourusername/mini_wallet_app.git`
