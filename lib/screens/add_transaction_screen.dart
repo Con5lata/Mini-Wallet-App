@@ -36,7 +36,7 @@ class _AddTransactionScreenState extends State<AddTransactionScreen> {
           child: Column(
             children: [
               DropdownButtonFormField<TransactionType>(
-                value: _selectedType,
+                initialValue: _selectedType,
                 decoration: const InputDecoration(labelText: 'Transaction Type', border: OutlineInputBorder()),
                 items: TransactionType.values.map((type) => DropdownMenuItem(
                   value: type, 
