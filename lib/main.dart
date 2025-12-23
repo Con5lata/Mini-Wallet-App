@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'providers/wallet_provider.dart';
-import 'screens/home_screen.dart'; // We will create this in the next branch
+import 'screens/home_screen.dart'; 
 
 void main() {
   runApp(
@@ -18,14 +18,22 @@ class MiniWalletApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
-      debugShowCheckedModeBanner: false, 
-      
+      debugShowCheckedModeBanner: false,
       title: 'Mini Wallet',
+      // Light Theme
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+      // Dark Theme 
+      darkTheme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.deepPurple, 
+          brightness: Brightness.dark,
+        ),
+        useMaterial3: true,
+      ),
+      themeMode: ThemeMode.system,
       home: const HomeScreen(),
     );
   }

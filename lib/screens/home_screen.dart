@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Column(
         children: [
-          // Balance Section
+          // Btionalance Sec
           Card(
             margin: const EdgeInsets.all(16),
             elevation: 4,
@@ -39,9 +39,14 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   const Text('Available Balance', style: TextStyle(color: Colors.white70, fontSize: 16)),
                   const SizedBox(height: 8),
-                  Text(
-                    '\$${wallet.totalBalance.toStringAsFixed(2)}',
-                    style: const TextStyle(color: Colors.white, fontSize: 36, fontWeight: FontWeight.bold),
+                  AnimatedSwitcher(
+                    duration: const Duration(milliseconds: 500),
+                    transitionBuilder: (child, animation) => ScaleTransition(scale: animation, child: child),
+                    child: Text(
+                      '\$${wallet.totalBalance.toStringAsFixed(2)}',
+                      key: ValueKey(wallet.totalBalance), // Triggers animation when value changes
+                      style: const TextStyle(color: Colors.white, fontSize: 36, fontWeight: FontWeight.bold),
+                    ),
                   ),
                 ],
               ),
@@ -89,5 +94,6 @@ class HomeScreen extends StatelessWidget {
         child: const Icon(Icons.add),
       ),
     );
+    
   }
 }

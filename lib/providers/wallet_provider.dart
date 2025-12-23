@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 import '../models/transaction.dart';
+import '../services/api_service.dart';
 
 class WalletProvider with ChangeNotifier {
+    // Loads the initial balance from an API and adds it as a credit transaction
+    Future<void> loadInitialBalance() async {
+      double startBalance = await ApiService().fetchStartingBalance();
+      addTransaction(startBalance, TransactionType.credit);
+    }
   // Private list to prevent direct manipulation from outside
   final List<Transaction> _transactions = [];
 
