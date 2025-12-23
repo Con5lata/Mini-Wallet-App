@@ -40,4 +40,3 @@ I chose **Provider** for this project because:
 ## 📝 Assumptions & Limitations
 - Data is stored in-memory (it resets when the app closes).
 - The app supports a single wallet currency (USD).
->>>>>>> bedf5fbcc748c8859919ed395b2cf0feccecadaf
